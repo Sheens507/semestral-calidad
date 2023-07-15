@@ -1,0 +1,185 @@
+
+.contenido{ /*Establece un contendor flexible utilizando flex box, elementos dentro de este contenedor se distribuirán uniformemente*/
+	display: flex;
+  justify-content: space-around;
+}
+
+.columna-izquierda, .columna-derecha { /*Columna izquierda y derecha tendrán un ancho inicial del 15%*/
+  flex-basis: 15%;
+  background-color: #14213D;
+}
+
+.columna-izquierda{
+	background-color:#14213D;
+	width:15%;
+}
+
+.columna-centro{ 
+flex-basis: 70%;
+  background-color: #31436B;
+}
+
+.columna-derecha{
+	background-color:#14213D;
+	
+	width:15%;
+}
+.Logo-container {
+	text-align:center;
+}
+
+.Logo{ /*Hace que el logo se muestre como un bloque y se centre horizontalmente*/
+	display:block;
+	margin:0 auto;
+}
+
+
+.Título{
+	font-family: monospace;
+	color:white;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.Mensajecontraseña{ /*Estilo para el mostrar mensaje de instrucción de la contraseña*/
+	font-family: sans-serif;
+	color: black;
+	font-size: 15px;
+	text-align: justify;
+	margin-top:2px;
+}
+
+.Parrafo{
+	color:white;
+	font-size:20px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.container { /*Establece el contenedor en el que se va a colocar los formularios, con display:flex permite distribuir los elementos dentro de este contenedor*/
+    width: 50%;
+    display: flex;
+    max-width: 900px;
+   margin:0 auto; 
+}
+
+.card { /*Hace que los elementos de la clase card ocupen el 100% de la clase contenedor, aplica márgenes y bordes redondeados, color de fondo para el formulario*/
+    width: 100%;
+    margin-top:20px;
+    margin-left:10px;
+    margin-bottom:20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#56B4BE;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    text-align: justify;
+}
+
+.form { /*Establece el tipo de letra de los formularios, el tamaño de la fuente y los márgenes de cada pregunta del formulario*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 22px;
+	margin-top:20px;
+	margin-left:20px;
+}
+
+input{ /*Estable el estilo de la entrada de datos*/
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  height: 2em;
+  margin: 2px;
+}
+
+input[type="submit"] {
+  background-color: #C2831C; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor estilo de puntero */
+  margin-left: 25%;
+  margin-right:75%;
+  margin-bottom: 30px;
+  margin-top:50px;
+  font-size: 25px;
+}
+
+input[type="submit"]:hover {
+  background-color: #FCA311; /* Color de fondo al pasar el cursor */
+}
+
+input[type="submit"]:focus {
+  outline: none; /* Quita el contorno cuando se enfoca */
+}
+
+footer {
+    /* Estilos generales del footer */
+    background-color: #FCA311;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 96.8%;
+    padding-top:20px;
+}
+
+.footer-copyright {
+    /* Estilos para el texto de derechos de autor */
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.boton-container{ /*Establece un contenedor que permite distribuir los botones dentro de un espacio definido*/
+	display: flex;
+  justify-content: center;
+}
+
+
+.boton { /*Con display: inline-block permite colocar un botón al lado del otro, además establece estilos generales de los botones como color de fondo y fuente, bordes entre otros*/
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #FDCE80;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-right:45%;
+  margin-top:150px;
+  font-size:30px;
+  text-align:center;
+}
+
+.boton:hover {
+  background-color: #FCA311;
+}
+
+.boton-login {  
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #C2831C;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top:30px;
+  margin-bottom:20px;
+  font-size: 20px;
+}
+
+.boton-login:hover {
+  background-color: #FCA311;
+}

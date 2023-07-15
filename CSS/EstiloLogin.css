@@ -1,0 +1,198 @@
+.contenido{ /*Establece un contendor flexible utilizando flex box, elementos dentro de este contenedor se distribuirán uniformemente*/
+	display: flex;
+  justify-content: space-around;
+}
+
+.columna-izquierda, .columna-derecha { /*Establece que la columna izquierda y derecha tendrán un ancho inicial del 15%*/
+  flex-basis: 15%;
+  background-color: #14213D;
+}
+
+.columna-izquierda{
+	background-color:#14213D;
+	width:15%;
+}
+
+.columna-centro{ /*Columna del centro tendrá un ancho inicial del 70%*/
+  flex-basis: 70%;
+  background-color: #31436B;
+}
+
+.columna-derecha{
+	background-color:#14213D;
+	width:15%;
+}
+.Logo { 
+	position: absolute;
+	top:255px;
+	left:42%;
+	right:42%;
+}
+.Título{ /*Establece el estilo de todos los títulos de las páginas*/
+	font-family: monospace;
+	color:white;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.MensajeLogin{ /*Establece el estilo para el mensaje de error en caso de un login incorrecto*/
+	color:white;
+	font-family: monospace;
+	font-size: 60px;
+	text-align: center;
+	font-weight: bold;
+	margin-top:100px;
+	margin-bottom:20px;
+}
+
+.Parrafo{ /*Establece el estilo para cualquier párrafo que se coloque en la página*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom:5px;
+	margin-left:25%;
+	margin-right:25%;
+}
+
+.container { /*Establece el contenedor en el que se va a colocar los formularios, con display:flex
+permite distribuir los elementos dentre de este contenido*/
+    width: 50%;
+    display: flex;
+    max-width: 900px;
+    margin-left: 225px;
+    margin-top: 200px;  
+}
+
+.card { /*Hace que los elementos de la clase card ocupen el 100% de la clase contenedor, aplica márgenes y
+bordes redondeados, color de fondo para el formulario*/
+    width: 100%;
+    margin-top:20px;
+    margin-left:10px;
+    margin-bottom:20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #56B4BE;
+    box-shadow: 0px 2px 8px #c2d3eb;
+    cursor: default;
+    text-align: justify;
+}
+
+.form { /*Establece el tipo de letra de los formularios, el tamaño de la fuente y los márgenes de cada pregunta
+del formulario*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 22px;
+	margin-top:20px;
+  margin-left: 25px;
+}
+
+input{ /*Estable el estilo de la entrada de datos*/
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    height: 2em;
+    margin: 2px;
+}
+
+input[type="submit"] {
+  background-color: #C2831C; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor estilo de puntero */
+  margin-left: 24%;
+  margin-right:56%;
+  margin-bottom: 20px;
+  margin-top:30px;
+  font-size: 23px;
+  font-weight:bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #FCA311; /* Color de fondo al pasar el cursor */
+}
+
+input[type="submit"]:focus {
+  outline: none; /* Quita el contorno cuando se enfoca */
+}
+
+footer {
+    /* Estilos generales del footer */
+    background-color: #FCA311;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 96.8%;
+    padding-top:20px;
+}
+
+.footer-copyright {
+    /* Estilos para el texto de derechos de autor */
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.mensaje {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.boton-container{ /*Establece un contenedor que permite distribuir los botenes dentro del espacio definido*/
+	display: flex;
+	justify-content: center;
+}
+
+
+.boton { /*Con display: inline-block permite colocar un botón al lado del otro, además establece estilos generales
+de los botonos como color de fondo y fuente, bordes entre otros*/
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #C2831C;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top:80px;
+  margin-bottom:40px;
+  font-size: 30px;
+}
+
+.boton:hover {
+  background-color: #FCA311;
+}
+
+.boton-login {  
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #C2831C;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top:30px;
+  margin-bottom:20px;
+  font-size: 20px;
+}
+
+.boton-login:hover {
+  background-color: #FCA311;
+}

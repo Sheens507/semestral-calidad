@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+ 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* modifica la tabla periodica de manera general */
+table{
+    width: 95vw;
+    border-collapse: collapse;
+    filter: drop-shadow(0px 0px 0.1rem #5572fb);
+}
+
+/* da un tamaño especifico a todas las celdas */
+td{
+    height: 30px;
+    width: 30px;
+}
+
+/* a los elementos de referencia dentro de la tabla se le otorga la cualidad de ocupar todo el espacio disponible */
+table a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s ease-in;
+}
+
+/* utiliza el : hover para que al pasar el cursor cambie de color todo el espacio que ocupe el elemento a */
+table a:hover{
+    color: white;
+    background-color: #031FA2;
+    font-size: 20px;
+}
+
+/* le da borde solo las celdas que son elementos */
+.nometal, .alcalin, .terreos, 
+.metal, .otros, .metaloi, 
+.haloge, .nobles, .raros{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nometal{
+    background-color: #ddabff;    
+}
+.alcalin{
+    background-color: #f7caac;
+}
+.terreos, .otros{
+    background-color: #ffe599;
+}
+
+.metal{
+    background-color: #ffff00;
+}
+.metaloi{
+    background-color: #68fb61;
+}
+
+.haloge{
+    background-color: #ff66ff;
+}
+.nobles{
+    background-color: #00ccff;
+}
+.raros{
+    background-color: #e2efd9;
+}
+
+/* de la 1/n del display a los n elemntos dentro de esta box, este clase es de los tipos de elemntos que dicen debajo de la tabla */
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Hace que los cada tipo de elemento se despliege de manera horizontal */
+.elementos{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+/* el div.nombre_class especifica que solo se modicaran los elemento que sean div y sean de la clase en cuestion */
+/* esta modifica y crea los circulos de colores delante de los tipos de elementos */
+div.alcalin, div.nometal, div.terreos, div.metal,
+div.otros, div.metaloi, div.haloge, div.nobles,
+div.raros{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    transition: none;
+    border-color: white;
+    margin-right: 2px;
+}
+
+/* al pasar por arriba de estos circulos de colores debe mostra que no esta permitido hacer click */
+div.alcalin:hover, div.nometal:hover, div.terreos:hover, div.metal:hover,
+div.otros:hover, div.metaloi:hover, div.haloge:hover, div.nobles:hover,
+div.raros:hover{
+    background-color: #ffffff00;
+    cursor: not-allowed;
+}
+
+/* cambia el font de los tipos de elementos que esta debajo de la tabla periodica */
+.contenedor p{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}

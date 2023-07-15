@@ -1,0 +1,157 @@
+/* declaración de importación en css utilizado en este caso para importar fuente  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/* :root es un elemento que modifica todo documento que tenga etiqueta HTML y sirve declarar variables personificados usando la sintaxis --nombre_variable:valor y para usar dicha variable se usa var(--nombre_variable) */
+:root{
+    --color: #C2831C;
+}
+
+/* modifica toda la pagina para que los elementos puedan estar gasta el borde de la pantalla  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Establece el color de fondo de la pagina web */
+body{
+    background-color: #14213D;
+}
+
+/* Quita el subrayado y le pone el color a todos los <a></a> de las paginas */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* cambia la fuente de los titulos de todas las paginas */
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* editar los footer de las paginas de manera que n elementos puedan tener 1/n fraccion del display*/
+footer{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: auto;
+    
+}
+
+/* al selecionar ambos class que se encentran en el footer se modifica con las mismas caracteristicas */
+.left, .center{
+    background-color: var(--color);
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+/* se seleciona el div del centro del footer y los elementos de refencias del div derecho para cumplir 
+con las reglas de consistencia en el desarrollo web */
+.center, .right a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+/* modifica el boton de logout del footer */
+.right img{
+    width: 50%;
+    height: auto;
+}
+
+/*  le da un espaciado a la izquierda a los texto de referencia que redirigen a los formulario*/
+.formulario-item{
+    padding-left: 10px;
+}
+
+/* */
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+  
+.menu li {
+    display: inline-block;
+}
+  
+.menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000000;
+}
+  
+.menu li a:hover {
+    background-color: #ead1a8;
+}
+  
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: var(--color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.contenido-desplegable a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.desplegable:hover .contenido-desplegable {
+    display: block;
+}
+
+/*banner*/
+.header-container {
+    background-color: #00317A; /* Color de fondo del contenedor del encabezado */
+    margin:0;
+}
+
+.banner {
+    margin-bottom: 0;
+    height: 195px; /*Ajusta la altura del contenedor del header*/
+    overflow: hidden;
+    
+}
+
+.banner img {
+    max-width: 81.8%; /* Ancho máximo de la imagen */
+    display: block; /* Mostrar la imagen como un bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 18fr 3fr; /*Dos columnas: una para el banner y otra para la imagen de busqueda y redes sociales*/
+}
+
+.imagen-principal {
+    grid-column:1; /*Colocar el banner en la columna 1*/
+    width:100%;
+    margin-left:91.5px; 
+}
+
+.boton-imagen {
+    grid-column:2; /*Colocar los botones en la segunda columna*/
+    display:flex;
+    margin-top:145px;
+    margin-right:30px;
+    
+}
+
+.boton-imagen img {
+    margin-left: 5px;
+}

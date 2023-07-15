@@ -1,0 +1,48 @@
+:root{
+    --colornews: #2A5268;
+}
+
+section a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* al contenedor madre para las noticias se le asigna que las cjas hijas ocuparan una fracion del displlay maximo de la cja madre */
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+/* modifica los datos de la noticia para darle una distribucion optima */
+.noticias{
+    background-color: var(--colornews);
+    /* ajustes de dentro de la caja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    /* ajustes de la caja */
+    margin: 2px 0px 2px 5px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #56B4BE;
+    width: 20rem;
+    height: auto;
+}
+
+
+.noticias p{
+    font-size: 13px;
+}
+
+/* Se seleciona los elementos de tipo video que esten dentro de la clase */
+.noticias video{
+    max-width: 20rem;
+    height: auto;
+}

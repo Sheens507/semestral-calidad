@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="CSS/formularios.css">
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link rel="icon" href="Imagenes/icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="banner">
+                <div class="grid-container">
+                  <div class="imagen-principal">
+                    <img src="Imagenes/banner.png" style="width: 100%; height: 195px;">
+                  </div>
+                    <div class="boton-imagen">
+                      <a href="https://www.google.com/">
+                        <img src="Imagenes/Busqueda.png" style="width: 100%; height: 50px;">
+                      </a>
+                      <a href="https://www.instagram.com/solociencia2023/">
+                        <img src="Imagenes/Instagram.png" style="width: 100%; height: 50px;">
+                      </a>
+                      <a href="https://twitter.com/Solociencia2023">
+                        <img src="Imagenes/Twitter.png" style="width: 60px; height: 50px;">
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li class="desplegable">
+                    <a href="">Registro</a>
+                    <!-- inicio del menu desplegable -->
+                        <div class="contenido-desplegable">
+                            <a href="RegistroCiencias.html">Curso de Ciencias Naturales</a>
+                            <a href="RegistroQuimica.html">Curso de Química y Biología</a>
+                            <a href="RegistroProgramacion.html">Curso de Programación</a>
+                        </div>
+                     <!-- fin del menu desplegable -->
+                </li>
+                <li><a href="referencia.html">Referencias</a></li>
+                <li><a href="Contactenos.html">Contáctenos</a></li>
+            </ul>           
+        </nav>
+    </header>
+
+
+    <section>
+            <form action="JSP/programacion.jsp" method="post">
+                <div class="form">
+
+                    <h1>Registro para el Curso de Programación</h1>
+                    <label for="nombre"> Ingrese su Nombre: </label>
+                    <input type="text" id="nombre" name="participante"><br><br>
+                    <label for="cedula">Ingrese su Cédula:</label>
+                    <input type="text" id="cedula" name="cedula"><br><br>
+                    <label for="fecha">Fecha en la que se inicia el curso:</label><br>
+                    <input class="check" type="radio" id="julio" name="fecha" value="julio">
+                    <label for="julio">20 de julio</label><br>
+                    
+                    <input class="check" type="radio" id="octubre" name="fecha" value="octubre">
+                    <label for="octubre">24 de octubre</label><br>
+    
+                    <input class="check" type="radio" id="noviembre" name="fecha" value="noviembre">
+                    <label for="noviembre">14 de noviembre</label><br><br>
+                    
+                    <a href="home.html"><input class="enviar" type="button" value="Volver"></a>
+                    <input class="enviar" type="submit" value="Registrarse">
+    
+                </div>
+            </form>
+    </section>
+
+
+    <footer>
+        <div class="left">
+
+            <p><a href="home.html">Home</a></p>
+            <p>Formularios:</p>
+                <p class="formulario-item"><a href="RegistroCiencias.html">Curso de Ciencias Naturales</a></p>
+                <p class="formulario-item"><a href="RegistroQuimica.html">Curso de Química y Biología</a></p>
+                <p class="formulario-item"><a href="RegistroProgramacion.html">Curso de Programación</a></p>
+            <p><a href="referencia.html">Referencias</a></p>
+            <p><a href="Contactenos.html">Contáctenos</a></p>
+          </div>
+          <div class="center">
+            <p>&copy; 2023 SoloCiencia.com. Todos los derechos reservados.</p>
+          </div>
+          <div class="right">
+            <a href="pagina1.html"><img src="Imagenes/logout.png" alt="logout"></a>
+          </div>
+    </footer>
+
+</body>
+</html>

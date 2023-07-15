@@ -1,0 +1,95 @@
+:root{
+    --colorform: #424d6b;
+}
+
+/* editor de seccion */
+/* Le da caracteristicas al elemento que contiene toda la info de la pagina*/
+section{ 
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*formulario*/
+.form{ /*Establece el estilo */
+    width: 425px;
+    background: var(--colorform);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    box-shadow: 6px 6px 3px 0px #737e97;
+
+}
+
+.form h1{ /*Establece el estilo de todos los titulos que esten en h1 del formulario*/
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+label{ /*Establece el estilo de todos las etiquetas de texto en el formulario*/
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* entrada de datos*/
+input{  /*Establece el estilo de los bordes de cada entrada de datos*/
+    background: var(--colorform);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    height: 2em;
+    width: 10em;
+    margin: 2px;
+}
+
+
+.check{ /*Establece el estilo de cada check del formulario*/
+    cursor: pointer;
+    background-color: #CCDAD1;
+    width: 13px;
+    height: 13px;
+    appearance: none;
+    border: 1px solid #888;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.check:hover{ /*Establece el estilo cuando se pasa el cursor */
+    background-color: #606060;
+
+    /* Cambia la imagen de fondo cuando pasa el cursor por la casilla*/
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    transition: box-shadow 0.3s ease-in-out; /* Realiza una transición suave al cambiar la sombra */
+}
+
+
+.check:disabled { /*Establece el estilo cuando está deshabilitado*/
+    background-color: #606060;
+    background-image: none;
+} 
+
+.check:checked { /*Establece el estilo cuando está seleccionado la casilla*/
+    background-color: rgb(80, 67, 250);
+
+    /* Cambia la imagen de fondo cuando está seleccionada la casilla*/
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+.enviar{  /*Establece el estilo de los botones*/
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out; /* Realiza una transición suave al cambiar la sombra */
+}
+
+.enviar:hover{ /*Establece el estilo de los botones cuando se pasa el cursor*/
+    background: #475075;
+    color: aliceblue;
+    box-shadow: 0 0 5px aliceblue;
+}
+
+.enviar:focus{ /* Elimina el contorno al enfocar los botones*/
+    outline: none;
+}

@@ -1,0 +1,60 @@
+:root{
+    --colorpart: #2A5268;
+}
+
+/* Le da caracteristicas al elemento que contiene toda la info de la pagina*/
+section{
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* modifica las cajas que contiene la caja de los integrantes del equipo de desarollo del sitio web */
+.participantes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+/* esta class es la que tiene la informacion de nostros */
+.info_par{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.7rem;
+    box-shadow: 0px 0px 10px #203563;/*genera una sobra alrededor del elemento*/
+    border-radius: 10px;
+    background-color: var(--colorpart);
+    color: white;
+}
+
+/* elementoA > elementoB: Este selector indica que elementoA es el elemento de referencia y se aplicará a todos los elementoB que sean descendientes directos de elementoA. */
+/* modifica las imagenes de los integrantes del grupo para que se vean limitadas a un tamaño minimo */
+.info_par>img{
+    max-width: 20vw;
+    max-height: 30vh;
+    margin: 2px;
+}
+
+/* modificador de todos lo elementos que sea de la clase botton para que que se vea en el centro y este espacida del resto de los elementos*/
+.botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+/* modifica todos  los elementos de referencia dentro del elemento con la clase botton*/
+.botton a{
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+/* al pasasar el curosr sobre el boton se cambia los colores haciendo intuitivo de que es interactiva*/
+.botton a:hover{
+    color: black;
+    background-color: white;
+}

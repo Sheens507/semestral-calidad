@@ -1,0 +1,84 @@
+<HTML>
+<head>
+<meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloRegistroUs.css">
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link rel="icon" type="image/x-icon" href="Imagenes/icon.png">  
+<title>Registro Usuario</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="banner">
+                <div class="grid-container">
+                  <div class="imagen-principal">
+                    <img src="Imagenes/banner.png" style="width: 100%; height: 195px;">
+                  </div>
+                    <div class="boton-imagen">
+                      <a href="https://www.google.com/">
+                        <img src="Imagenes/Busqueda.png" style="width: 100%; height: 50px;">
+                      </a>
+                      <a href="https://www.instagram.com/solociencia2023/">
+                        <img src="Imagenes/Instagram.png" style="width: 100%; height: 50px;">
+                      </a>
+                      <a href="https://twitter.com/Solociencia2023">
+                        <img src="Imagenes/Twitter.png" style="width: 60px; height: 50px;">
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</header>
+    <section class="contenido">
+        <div class="columna-izquierda"></div>
+            <div class="columna-centro">
+                <h1 class="Título">REGISTRARSE</h1>
+
+                <div class="Logo-container">
+                    <img class="Logo" src="Imagenes/icon.png" style= "width: 230px; height: 240px;">
+                </div>
+
+                <p class=Parrafo>¡Bienvenido al formulario de registro, únete a nuestra comunidad y descubre un mundo de conocimiento ilimitado!</p>
+                    <div class="container"> <!-- Contiene el formulario -->
+                        <div class="card">
+                            <section>
+                                <form class=form action="JSP/RegisUser.jsp" method="post">
+                                <label class=label for="nombre">Nombre:</label>
+                                <input class=text type="text" id="nombre" name="nombre" pattern ="[A-Za-z]+" placeholder="Ingrese solo letras" required><br><br>
+
+                                <label class=label for="cedula">Apellido:</label>
+                                <input class=text type="text" id="apellido" name="apellido" pattern ="[A-Za-z]+" placeholder="Ingrese solo letras" required><br><br>
+
+                                <label class="label" for="edad">Edad:</label>
+                                <input class="text" type="text" id="edad" name="edad" pattern="[0-9]*" inputmode="numeric" placeholder="Ingrese solo números" required><br><br>
+
+                                <label class="label" for="password">Contraseña:</label>
+                                <input class="text" type="password" id="password" name="password" minlength="5" maxlength="10" placeholder="Ejemplo: 123@fgh" required><br>
+                                <p class="Mensajecontraseña">Mínimo: 5 caracteres</p>
+                                <p class="Mensajecontraseña">Maximo: 10 caracteres</p>
+
+                                <input type="submit" value="Registrarse">        
+
+
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="boton-container">
+                        <a class="boton-login" href="pagina1.html">Volver</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="columna-derecha"></div>
+    </section>
+
+</body>
+    <footer>
+        <p class="footer-copyright">
+            SoloCiencia.com - Todos los derechos reservados <br>
+            © SOLOCIENCIA.COM.
+        </p>
+    </footer>
+</HTML>
